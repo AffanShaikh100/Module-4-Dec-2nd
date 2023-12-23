@@ -10,14 +10,13 @@ const App = () =>{
 
 let[username,setUsername] = useState("")
 let[password,setPassword] = useState("")
-
+let [btnclick, setBtnclick] = useState("")
 
     return(
         <div>
             <Login>
-                 <Fetchdata username={username} password={password} />
-                 <Signupbox setUsername={setUsername} setPassword={setPassword} />
-                
+                 <Signupbox setUsername={setUsername} setPassword={setPassword} setBtnclick={setBtnclick}/>
+                 <Fetchdata username={username} password={password} btnclick={btnclick} />
             </Login>
         </div>
     )

@@ -1,12 +1,13 @@
 import React from "react";
 
 
-const Signupbox = ({setUsername, setPassword}) =>{
+const Signupbox = ({setUsername, setPassword,setBtnclick}) =>{
 
     function userDetails(){
       if(setUsername||setPassword===""){
         alert("Please fill all values")
       }
+      setBtnclick(true);
     }
 
     return(

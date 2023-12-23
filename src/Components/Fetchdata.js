@@ -9,14 +9,14 @@ const Fetchdata =({username,password})=>{
             method: "POST",
             headers:{'Content-Type': 'application/json'},
             body: JSON.stringify({
-                username: `${username}`,
-                password:  `${password}`,
+                username: username,
+                password: password,
             })
           })
           .then((res)=>(res.json()))
            .then((ans)=>console.log(ans))
           .catch(err=> console.log(err))
-    },[])
+    },[btnclick])
   
 
     return(

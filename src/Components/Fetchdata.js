@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 
 
-const Fetchdata =({username,password})=>{
+const Fetchdata =({username,password,btnclick})=>{
 
     useEffect(()=>{
         fetch("https://dummyjson.com/auth/login",{

@@ -4,7 +4,7 @@ import React from "react";
 const Signupbox = ({setUsername, setPassword}) =>{
 
     function userDetails(){
-      if(setUsername||setPassword==""){
+      if(setUsername||setPassword===""){
         alert("Please fill all values")
       }
     }
